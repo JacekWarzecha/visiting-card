@@ -13,7 +13,13 @@ html {
 
 #root {
     min-height: 100vh;
-    background: gold;
+    padding: 25px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    word-break: break-word;
+    
     
 }
 `;
