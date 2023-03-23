@@ -26,7 +26,7 @@ export const Projects = () => {
         ))
     );
 
-  const [projects, setProjects] = useState("Oczekuję na kliknięcie");
+  const [projects, setProjects] = useState("");
 
   return (
     <div>

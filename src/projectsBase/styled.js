@@ -6,6 +6,10 @@ export const Link = styled.a`
   transition: 0.5s;
 
   &:hover {
-    color: gold;
+    color: ${({ theme }) => theme.color.grey};
+  }
+
+  &:active {
+    filter: brightness(110%);
   }
 `;

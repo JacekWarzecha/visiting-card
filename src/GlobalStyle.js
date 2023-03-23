@@ -14,12 +14,11 @@ html {
 #root {
     min-height: 100vh;
     padding: 25px;
-    background: #fff;
+    background: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.color.black};
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     word-break: break-word;
-    
-    
 }
 `;
