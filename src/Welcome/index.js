@@ -24,8 +24,12 @@ export const Welcome = () => {
         </SectionItem>
         <SectionItem>
           🙂 Jacek Warzecha
-          <Link href="mailto:drjackys@gmail.com">📬 drjackys@gmail.com</Link>
-          <Link href="tel:+48.519-158-450">☎️ 519-158-450</Link>
+          <Link title="Napisz do mnie" href="mailto:drjackys@gmail.com">
+            📬 drjackys@gmail.com
+          </Link>
+          <Link title="Zadzwoń do mnie" href="tel:+48.519-158-450">
+            ☎️ 519-158-450
+          </Link>
         </SectionItem>
       </Section>
       <SectionSkills>

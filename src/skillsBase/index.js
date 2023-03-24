@@ -1,13 +1,17 @@
 export const skillsBase = [
   "React",
   "Redux",
+  "Axios",
+  "Fetch",
+  "Async/await",
+  "Git",
   "useState",
   "useRef",
   "useEffect",
   "useCustomHook",
   "styled-components",
   "JavaScript",
-  "HMTL",
   "CSS",
+  "HMTL",
   "BEM",
 ];
