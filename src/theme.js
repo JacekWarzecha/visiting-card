@@ -10,6 +10,7 @@ export const theme = {
   fontSize: {
     bigger: "34",
     medium: "30",
+    mid: "26",
     normal: "21",
   },
   distance: {

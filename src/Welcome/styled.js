@@ -42,19 +42,23 @@ export const Image = styled.img`
 
 export const SectionSkills = styled.div`
   padding-top: 25px;
-  font-size: ${({ theme }) => theme.fontSize.normal}px;
+  font-size: ${({ theme }) => theme.fontSize.mid}px;
   text-align: center;
 `;
 
 export const List = styled.ul`
+  font-style: italic;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+  }
 `;
 
 export const ListItem = styled.li`
   margin: 15px 35px;
-
-  @media (max-width: 767px) {
-    text-align: left;
-  }
+  font-size: ${({ theme }) => theme.fontSize.normal}px;
 `;
