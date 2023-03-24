@@ -1,4 +1,4 @@
-export const skillsBase = [
+export const dataSkills = [
   "React",
   "Redux",
   "Axios",

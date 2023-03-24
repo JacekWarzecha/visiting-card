@@ -7,7 +7,7 @@ import {
   Paragraph,
 } from "./styled";
 
-import { projectsBase } from "../projectsBase/projectsBase";
+import { dataProjects } from "../DataProjects";
 
 export const Projects = () => {
   const renderProjects = () =>
@@ -15,7 +15,7 @@ export const Projects = () => {
       (projects) =>
         (projects = (
           <SectionProjects>
-            {Object.values(projectsBase).map((projects) => (
+            {Object.values(dataProjects).map((projects) => (
               <ItemProjects key={projects.name}>
                 <Paragraph fontBigger>{projects.name}</Paragraph>
                 <Paragraph>Demo: {projects.linkPage} </Paragraph>

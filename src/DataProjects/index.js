@@ -1,6 +1,6 @@
 import { Link } from "./styled";
 
-export const projectsBase = {
+export const dataProjects = {
   currency: {
     name: "Kantor walut",
     linkPage: (

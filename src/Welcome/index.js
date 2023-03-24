@@ -9,7 +9,7 @@ import {
   ListItem,
 } from "./styled";
 import { Link } from "../projectsBase/styled";
-import { skillsBase } from "../skillsBase";
+import { dataSkills } from "../DataSkills";
 import jackk from "./../images/jackk.jpg";
 
 export const Welcome = () => {
@@ -35,7 +35,7 @@ export const Welcome = () => {
       <SectionSkills>
         Technologie:
         <List>
-          {skillsBase.map((skill) => (
+          {dataSkills.map((skill) => (
             <ListItem key={skill}>{skill}</ListItem>
           ))}
         </List>
