@@ -4,10 +4,13 @@ export const theme = {
     black: "#000",
     grey: "#ccc",
     littleGrey: "hsl(0deg 0% 96.85%);",
+    littleBlue: "#0072ffb5",
+    mediumBlue: "#0066ff",
   },
   fontSize: {
     bigger: "34",
-    normal: "22",
+    medium: "30",
+    normal: "21",
   },
   distance: {
     twenty: "20",

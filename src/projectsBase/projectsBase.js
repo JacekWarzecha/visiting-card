@@ -8,6 +8,7 @@ export const projectsBase = {
         target="_blank"
         title="Przejdź do strony"
         href="https://jacekwarzecha.github.io/currency-converter-react/"
+        colorBlue
       >
         Link
       </Link>
@@ -17,6 +18,7 @@ export const projectsBase = {
         target="_blank"
         title="Przejdź do strony"
         href="https://github.com/JacekWarzecha/currency-converter-react"
+        colorBlue
       >
         Link
       </Link>
@@ -29,6 +31,7 @@ export const projectsBase = {
         target="_blank"
         title="Przejdź do strony"
         href="https://jacekwarzecha.github.io/todo-list-react/"
+        colorBlue
       >
         Link
       </Link>
@@ -38,6 +41,7 @@ export const projectsBase = {
         target="_blank"
         title="Przejdź do strony"
         href="https://github.com/JacekWarzecha/todo-list-react"
+        colorBlue
       >
         Link
       </Link>

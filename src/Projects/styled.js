@@ -5,7 +5,6 @@ export const Button = styled.button`
   border: none;
   border-radius: 6px;
   background: ${({ theme }) => theme.color.littleGrey};
-
   margin-bottom: ${({ theme }) => theme.distance.twenty}px;
   padding: ${({ theme }) => theme.distance.ten}px;
   font-size: ${({ theme }) => theme.fontSize.normal}px;
@@ -24,8 +23,12 @@ export const Button = styled.button`
 export const SectionProjects = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   font-size: ${({ theme }) => theme.fontSize.normal}px;
+
+  @media (max-width: 767px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ItemProjects = styled.div`
@@ -34,7 +37,6 @@ export const ItemProjects = styled.div`
   grid-template-columns: 1fr;
   border: solid 1px ${({ theme }) => theme.color.grey};
   line-height: 2;
-
   padding: ${({ theme }) => theme.distance.twenty}px;
 
   &:hover {
@@ -47,7 +49,8 @@ export const Paragraph = styled.p`
   ${({ fontBigger }) =>
     fontBigger &&
     css`
-      font-size: 26px;
+      font-size: 34px;
+      font-family: "Niconne", cursive;
     `}
 `;
 
