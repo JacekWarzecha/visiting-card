@@ -12,6 +12,7 @@ html {
 }
 
 #root {
+    font-family: 'Playfair Display', serif;
     min-height: 100vh;
     padding: 25px;
     background: ${({ theme }) => theme.color.white};
