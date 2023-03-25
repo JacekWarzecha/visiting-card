@@ -9,6 +9,7 @@ export const dataSkills = [
   "useRef",
   "useEffect",
   "useCustomHook",
+  "ES6",
   "styled-components",
   "JavaScript",
   "CSS",
