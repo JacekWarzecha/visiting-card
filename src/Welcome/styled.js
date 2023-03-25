@@ -53,8 +53,8 @@ export const List = styled.ul`
 
   @media (max-width: 767px) {
     flex-direction: column;
-    text-align: left;
     align-items: center;
+    text-align: center;
   }
 `;
 

@@ -8,7 +8,7 @@ import {
   List,
   ListItem,
 } from "./styled";
-import { Link } from "../projectsBase/styled";
+import { Link } from "../DataProjects/styled";
 import { dataSkills } from "../DataSkills";
 import jackk from "./../images/jackk.jpg";
 

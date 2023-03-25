@@ -12,6 +12,6 @@ export const dataSkills = [
   "styled-components",
   "JavaScript",
   "CSS",
-  "HMTL",
+  "HTML",
   "BEM",
 ];
