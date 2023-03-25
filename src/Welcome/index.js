@@ -10,9 +10,27 @@ import {
 } from "./styled";
 import { Link } from "../DataProjects/styled";
 import { dataSkills } from "../DataSkills";
+import { useEffect, useState } from "react";
 import jackk from "./../images/jackk.jpg";
 
 export const Welcome = () => {
+  const [skills, setSkills] = useState("");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setSkills((skills) => {
+        <SectionSkills>
+          Technologie:
+          <List>
+            {dataSkills.map((skill) => (
+              <ListItem key={skill}>{skill}</ListItem>
+            ))}
+          </List>
+        </SectionSkills>;
+      }, 1500);
+    });
+  }, []);
+
   return (
     <div>
       <Header border>
@@ -32,14 +50,7 @@ export const Welcome = () => {
           </Link>
         </SectionItem>
       </Section>
-      <SectionSkills>
-        Technologie:
-        <List>
-          {dataSkills.map((skill) => (
-            <ListItem key={skill}>{skill}</ListItem>
-          ))}
-        </List>
-      </SectionSkills>
+      {skills}
     </div>
   );
 };
