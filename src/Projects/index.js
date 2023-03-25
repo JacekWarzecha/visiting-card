@@ -1,32 +1,8 @@
-import { useState } from "react";
-import {
-  Button,
-  SectionProjects,
-  ItemProjects,
-  Loading,
-  Paragraph,
-} from "./styled";
-
-import { dataProjects } from "../DataProjects";
+import { Button, Loading } from "./styled";
+import { useProjects } from "./useProjects";
 
 export const Projects = () => {
-  const renderProjects = () =>
-    setProjects(
-      (projects) =>
-        (projects = (
-          <SectionProjects>
-            {Object.values(dataProjects).map((projects) => (
-              <ItemProjects key={projects.name}>
-                <Paragraph fontBigger>{projects.name}</Paragraph>
-                <Paragraph>Demo: {projects.linkPage} </Paragraph>
-                <Paragraph>Repo: {projects.linkRepo} </Paragraph>
-              </ItemProjects>
-            ))}
-          </SectionProjects>
-        ))
-    );
-
-  const [projects, setProjects] = useState("");
+  const { projects, renderProjects } = useProjects();
 
   return (
     <div>
