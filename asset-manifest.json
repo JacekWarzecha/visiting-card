@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/visiting-card/static/js/main.35233bd4.js",
+    "main.js": "/visiting-card/static/js/main.45b813fd.js",
     "static/js/787.b15fadb5.chunk.js": "/visiting-card/static/js/787.b15fadb5.chunk.js",
     "static/media/jackk.jpg": "/visiting-card/static/media/jackk.c0185f8c7081ad75d0d8.jpg",
     "index.html": "/visiting-card/index.html",
-    "main.35233bd4.js.map": "/visiting-card/static/js/main.35233bd4.js.map",
+    "main.45b813fd.js.map": "/visiting-card/static/js/main.45b813fd.js.map",
     "787.b15fadb5.chunk.js.map": "/visiting-card/static/js/787.b15fadb5.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.35233bd4.js"
+    "static/js/main.45b813fd.js"
   ]
 }
