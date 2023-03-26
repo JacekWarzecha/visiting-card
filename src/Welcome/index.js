@@ -18,17 +18,20 @@ export const Welcome = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setSkills((skills) => {
-        <SectionSkills>
-          Technologie:
-          <List>
-            {dataSkills.map((skill) => (
-              <ListItem key={skill}>{skill}</ListItem>
-            ))}
-          </List>
-        </SectionSkills>;
-      }, 1500);
-    });
+      setSkills(
+        (skills) =>
+          (skills = (
+            <SectionSkills>
+              Technologie:
+              <List>
+                {dataSkills.map((skill) => (
+                  <ListItem key={skill}>{skill}</ListItem>
+                ))}
+              </List>
+            </SectionSkills>
+          ))
+      );
+    }, 1250);
   }, []);
 
   return (
