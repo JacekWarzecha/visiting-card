@@ -1,39 +1,11 @@
-import {
-  H1,
-  Header,
-  Section,
-  SectionItem,
-  Image,
-  SectionSkills,
-  List,
-  ListItem,
-} from "./styled";
+import { H1, Header, Section, SectionItem, Image, Loading } from "./styled";
 import { Link } from "../DataProjects/styled";
-import { dataSkills } from "../DataSkills";
-import { useEffect, useState } from "react";
+import { useSkills } from "./useSkills";
+
 import jackk from "./../images/jackk.jpg";
 
 export const Welcome = () => {
-  const [skills, setSkills] = useState("");
-
-  useEffect(() => {
-    setTimeout(() => {
-      setSkills(
-        (skills) =>
-          (skills = (
-            <SectionSkills>
-              Technologie:
-              <List>
-                {dataSkills.map((skill) => (
-                  <ListItem key={skill}>{skill}</ListItem>
-                ))}
-              </List>
-            </SectionSkills>
-          ))
-      );
-    }, 1250);
-  }, []);
-
+  const skills = useSkills();
   return (
     <div>
       <Header border>
@@ -53,7 +25,7 @@ export const Welcome = () => {
           </Link>
         </SectionItem>
       </Section>
-      {skills}
+      {skills.state === "loading" ? <Loading> Ładuję.</Loading> : skills}
     </div>
   );
 };

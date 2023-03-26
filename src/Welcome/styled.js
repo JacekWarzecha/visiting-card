@@ -62,3 +62,10 @@ export const ListItem = styled.li`
   margin: 15px 35px;
   font-size: ${({ theme }) => theme.fontSize.normal}px;
 `;
+
+export const Loading = styled.p`
+  display: flex;
+  justify-content: center;
+  color: green;
+  font-size: ${({ theme }) => theme.fontSize.medium}px;
+`;
