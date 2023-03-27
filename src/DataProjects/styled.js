@@ -16,6 +16,14 @@ export const Link = styled.a`
       }
     `}
 
+  @media(max-width:767px) {
+    ${({ fontSmaller }) =>
+      fontSmaller &&
+      css`
+        font-size: 20px;
+      `}
+  }
+
   ${({ colorBlue }) =>
     colorBlue &&
     css`

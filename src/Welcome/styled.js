@@ -39,6 +39,10 @@ export const SectionItem = styled.div`
     contentEnd &&
     css`
       justify-content: end;
+
+      @media (max-width: 767px) {
+        padding-bottom: 25px;
+      }
     `}
 `;
 

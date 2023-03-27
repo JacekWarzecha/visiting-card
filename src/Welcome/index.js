@@ -25,7 +25,12 @@ export const Welcome = () => {
         </SectionItem>
         <SectionItem>
           <Paragraph>🙂 Jacek Warzecha</Paragraph>
-          <Link padding title="Napisz do mnie" href="mailto:drjackys@gmail.com">
+          <Link
+            padding
+            fontSmaller
+            title="Napisz do mnie"
+            href="mailto:drjackys@gmail.com"
+          >
             📬 drjackys@gmail.com
           </Link>
           <Link padding title="Zadzwoń do mnie" href="tel:+48.519-158-450">
