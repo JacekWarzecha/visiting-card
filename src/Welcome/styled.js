@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Header = styled.header`
   display: grid;
@@ -18,9 +18,10 @@ export const H1 = styled.h1`
 
 export const Section = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   font-size: ${({ theme }) => theme.fontSize.medium}px;
   padding: ${({ theme }) => theme.distance.twenty}px;
+  align-items: center;
 
   @media (max-width: 767px) {
     display: flex;
@@ -33,6 +34,23 @@ export const Section = styled.section`
 export const SectionItem = styled.div`
   display: grid;
   justify-content: center;
+
+  ${({ contentEnd }) =>
+    contentEnd &&
+    css`
+      justify-content: end;
+    `}
+`;
+
+export const Paragraph = styled.p`
+  margin: 0;
+  padding: ${({ theme }) => theme.distance.twenty}px;
+
+  @media (max-width: 767px) {
+    padding: 10px 20px;
+    display: grid;
+    justify-content: center;
+  }
 `;
 
 export const Image = styled.img`
